@@ -1,0 +1,26 @@
+﻿<h3>Form001</h3>
+
+
+<div>
+    <input type="text" @bind-value="@input_value" /> @*binder es la coneccion entre html y blazor*@
+    <input type="button" value="Cliqueame" @onclick="ChangeText" />
+    <p>@message</p>
+</div>
+
+<div>
+    <input type="text" @bind="@message2" @bind:event="oninput" />
+    <p>@message2</p>
+</div>
+
+@code {
+    // Espacio para construir codigo c#
+    string message;
+    string input_value;
+    string message2;
+
+    private void ChangeText(){
+        message = input_value;
+    }
+}
+
+

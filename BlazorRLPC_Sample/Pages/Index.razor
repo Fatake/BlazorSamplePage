@@ -4,25 +4,15 @@
 
 <h1>Pagina de ejemplo Blazor!</h1>
 
+
+
 <p>Ejemplo Creado por Paulo </p>
-<div>
-    <input type="text" @bind-value="@input_value" />
-    <input type="button" value="Cliqueame" @onclick="ChangeText" />
-    <p>@message</p>
-</div>
 
-<div>
-    <input type="text" @bind="@message2" @bind:event="oninput" />
-    <p>@message2</p>
-</div>
+<p>En Blazor las paginas .razor .cshtml son componentes.<br />
+se pueden llamar desde cualquier parte del codigo
+</p>
 
-@code {
-    // Espacio para construir codigo c#
-    string message;
-    string input_value;
-    string message2;
+<br />
 
-    private void ChangeText(){
-        message = input_value;
-    }
-}
+@*Invocando componentes creados*@
+<Form001></Form001>
