@@ -1,4 +1,7 @@
-﻿<h3>Form001</h3>
+﻿
+
+
+<h3>Form001</h3>
 
 
 <div>
@@ -13,10 +16,21 @@
 </div>
 
 @code {
+    [Parameter] // Propiedad y atributo generando parametros que se pueden enviar
+    public string Mensaje { get; set; }
+
     // Espacio para construir codigo c#
     string message;
     string input_value;
     string message2;
+
+    //---------------------
+
+    // cliclo de vida del componente el init
+    protected override async Task OnInitializedAsync()
+    {
+        this.message = Mensaje;
+    }
 
     private void ChangeText(){
         message = input_value;
