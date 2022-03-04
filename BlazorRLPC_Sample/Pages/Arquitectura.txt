@@ -16,3 +16,4 @@ Para entity frameword
     Negocio
     Presentación
 
+Una Entidad es una respresentacion en código de la estructura de una Bae de datos
