@@ -1,0 +1,18 @@
+﻿
+ 
+Arquitectura != patron de diseño
+ 
+Patron de diseño rmc
+ 
+ 
+Arquitectura por capas
+    Acceso a datos
+    Negocio  <--- Consultas crud
+    Manejo de datos <--- Variaciones y estructuras de codigo
+    Presentación <--- Capa web/aplicacion
+ 
+Para entity frameword
+    Acceso a datos
+    Negocio
+    Presentación
+
